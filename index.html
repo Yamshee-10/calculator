@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div>
+            <h2>Calculator</h2>
+        </div>
+        <br>
+        <div id="display">
+            <input type="text" id="displayVal" readonly>
+        </div> 
+         <div id="numbers"> 
+            <div class="btn" id="one" onclick="
+                displayValue = displayValue + '1';
+                document.querySelector('#displayVal').value = displayValue
+                ">1</div>
+            <div class="btn" id="two"  onclick="
+            displayValue = displayValue + '2';
+            document.querySelector('#displayVal').value = displayValue
+            ">2</div>
+            <div class="btn" id="three"  onclick="
+            displayValue = displayValue + '3';
+            document.querySelector('#displayVal').value = displayValue
+            ">3</div>
+            <div class="btn" id="plus" onclick="
+            displayValue = displayValue + '+';
+            document.querySelector('#displayVal').value = displayValue
+            ">+</div>
+            <div class="btn" id="four" onclick="
+            displayValue = displayValue + '4';
+            document.querySelector('#displayVal').value = displayValue
+            ">4</div>
+            <div class="btn" id="five" onclick="
+            displayValue = displayValue + '5';
+            document.querySelector('#displayVal').value = displayValue
+            ">5</div>
+            <div class="btn" id="six" onclick="
+            displayValue = displayValue + '6';
+            document.querySelector('#displayVal').value = displayValue
+            ">6</div>
+            <div class="btn" id="minus" onclick="
+            displayValue = displayValue + '-';
+            document.querySelector('#displayVal').value = displayValue
+            ">-</div>
+            <div class="btn" id="seven" onclick="
+            displayValue = displayValue + '7';
+            document.querySelector('#displayVal').value = displayValue
+            ">7</div>
+            <div class="btn" id="eight" onclick="
+            displayValue = displayValue + '8';
+            document.querySelector('#displayVal').value = displayValue
+            ">8</div>
+            <div class="btn" id="nine" onclick="
+            displayValue = displayValue + '9';
+            document.querySelector('#displayVal').value = displayValue
+            ">9</div>
+            <div class="btn" id="astric" onclick="
+            displayValue = displayValue + '*';
+            document.querySelector('#displayVal').value = displayValue
+            ">*</div>
+            <div class="btn" id="Clear" onclick="
+            displayValue = '';
+            document.querySelector('#displayVal').value = displayValue;
+            ">c</div>
+            <div class="btn" id="zero" onclick="
+            displayValue = displayValue + '0';
+            document.querySelector('#displayVal').value = displayValue
+            ">0</div>
+            <div class="btn" id="divide" onclick="
+            displayValue = displayValue + '/';
+            document.querySelector('#displayVal').value = displayValue
+            ">/</div>
+            <div class="btn" id="equals" onclick="
+            displayValue = eval(displayValue);
+            document.querySelector('#displayVal').value= displayValue">=</div>
+      </div>
+    </div> 
+    <script>
+        let displayValue = '';
+    </script>
+</body>
+</html>
